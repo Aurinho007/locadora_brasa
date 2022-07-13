@@ -1,0 +1,33 @@
+{
+  "filmes":[
+  {
+      "nome": "Batman",
+      "categoria": "Ação",
+      "classificacao": "14 anos",
+      "duracao": "2h20min",
+      "descricao": "Uma nova aventura do Batman",
+      "cartaz": "https://thedissolve.com/features/adventures-in-licensing/207-how-the-1989-batman-logo-helped-set-the-course-for/",
+      "id": 1
+  },
+
+  {
+      "nome": "Homem-Aranha",
+      "categoria": "Ação",
+      "classificacao": "Livre",
+      "duracao": "2h15min",
+      "descricao": "O Homem-Aranha lutando contra o Duende Verde",
+      "cartaz": "https://movie-fanatic-res.cloudinary.com/iu/s--Px3LHR6h--/f_auto,q_auto/v1423547827/spider-man-logo",
+      "id": 2
+  },
+  {
+      "nome": "Barbie",
+      "categoria": "Fantasia",
+      "classificacao": "Livre",
+      "duracao": "1h24min",
+      "descricao": "Barbie enfrenta novos desafios em sua profissão",
+      "cartaz": "https://m.media-amazon.com/images/M/MV5BNTgyOGQyMGEtMGViOS00NDA3LWE3YzEtZjVmNGU3YTI5NTNjXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg",
+      "id": 3
+  }
+
+  ]
+}
