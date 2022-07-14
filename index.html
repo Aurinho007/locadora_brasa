@@ -24,22 +24,45 @@
         <h1>Bem-Vindo(a) ao Brasa!</h1>
     
         <div id="container-filmes">
-
-            <div id="filmes">
-
-            </div>
-
-            <div id="btn">
-
-            </div>
-        </div>
-
-        
-        <div id="modal">
-
         </div>
     </section>
 
+<!-- <script>
+    let filmesContainer = document.querySelectorAll('.filmes');
+    let filmes = document.querySelectorAll('.filme');
+    let setaDireita = document.querySelector('.seta-direita');
+    let setaEsquerda = document.querySelector('.seta-esquerda');
+
+    filmes.forEach(filme => filme.addEventListener('mouseover', () => {
+        filme.style.zIndex = '1';
+        filme.childNodes[1].style.transform = 'scale(1.3)'
+        filme.childNodes[1].style.zIndex = '100'
+        filme.childNodes[1].style.filter = 'grayscale(60%) blur(3px)'
+        
+        filme.childNodes[3].style.visibility = 'visible'
+        filme.childNodes[3].style.zIndex = '100'
+        filme.childNodes[3].style.transform = 'scale(1.3)';
+    }));
+    
+    filmes.forEach(filme => filme.addEventListener('mouseout', () => {
+        filme.style.zIndex = '0';
+        filme.childNodes[1].style = 'transform: scale(1); z-index: 1;'
+        filme.childNodes[3].style = 'visibility: hidden; transform: scale(1);';
+    }));
+
+
+    let container = document.querySelector('.filmes');
+    setaDireita.addEventListener('click', () => {
+        container.scrollLeft += 300;
+    });
+
+    setaEsquerda.addEventListener('click', () => {
+        container.scrollLeft -= 300;
+    });
+    
+</script> -->
+
 <script src="./js/main.js"></script>
+<script src="./js/view.js"></script>
 </body>
 </html>

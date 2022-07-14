@@ -3,17 +3,17 @@
   {
       "nome": "Batman",
       "categoria": "Ação",
-      "classificacao": "14 anos",
+      "classificacao": 14,
       "duracao": "2h20min",
       "descricao": "Uma nova aventura do Batman",
-      "cartaz": "https://thedissolve.com/features/adventures-in-licensing/207-how-the-1989-batman-logo-helped-set-the-course-for/",
+      "cartaz": "https://th.bing.com/th/id/OIP.12c_PqD7DtkGedekpA-OYQHaEK?pid=ImgDet&rs=1",
       "id": 1
   },
 
   {
       "nome": "Homem-Aranha",
       "categoria": "Ação",
-      "classificacao": "Livre",
+      "classificacao": 0,
       "duracao": "2h15min",
       "descricao": "O Homem-Aranha lutando contra o Duende Verde",
       "cartaz": "https://movie-fanatic-res.cloudinary.com/iu/s--Px3LHR6h--/f_auto,q_auto/v1423547827/spider-man-logo",
@@ -22,12 +22,39 @@
   {
       "nome": "Barbie",
       "categoria": "Fantasia",
-      "classificacao": "Livre",
+      "classificacao": 0,
       "duracao": "1h24min",
       "descricao": "Barbie enfrenta novos desafios em sua profissão",
       "cartaz": "https://m.media-amazon.com/images/M/MV5BNTgyOGQyMGEtMGViOS00NDA3LWE3YzEtZjVmNGU3YTI5NTNjXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg",
       "id": 3
-  }
+  },
+  {
+    "nome": "Vingadores: Ultimato",
+    "categoria": "Ação",
+    "classificacao": 14,
+    "duracao": "3h10min",
+    "descricao": "Um bicho roxo mata metade do universo",
+    "cartaz": "https://i1.wp.com/cinecinemania.com.br/wp-content/uploads/2019/07/Vingadores-Ultimato.jpg?fit=1920%2C1080&ssl=1",
+    "id": 4
+},
+{
+    "nome": "O resgate do soldado Ryan",
+    "categoria": "Ação",
+    "classificacao": 18,
+    "duracao": "1h50min",
+    "descricao": "O resgate do soldado perdido que não foi achado",
+    "cartaz": "https://th.bing.com/th/id/OIP.ZB60ilYafn5DfqEUpvrEKgHaEK?pid=ImgDet&rs=1",
+    "id": 5
+},
+{
+    "nome": "Interestellar",
+    "categoria": "Ficção-Científica",
+    "classificacao": 12,
+    "duracao": "3h05min",
+    "descricao": "Embarque nesse carrossel mano, a vida é bela",
+    "cartaz": "https://th.bing.com/th/id/R.eaf663064f7c9bfd9fb40f1d5e6ee547?rik=DDu8gGXJ7kKfyA&pid=ImgRaw&r=0",
+    "id": 6
+}
 
   ]
 }

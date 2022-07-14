@@ -17,7 +17,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--background);
+    background-color: #000;
+    font-family: 'Patua One', cursive;
 }
 
 section {
@@ -33,7 +34,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 150px;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     height: 70px;
     background-color: var(--black);
@@ -51,12 +52,10 @@ header{
 
 #img-logo p{
     color: #fff;
-    font-family: 'Patua One', cursive;
     font-size: 16px;
 }
 
 .btn-header{
-    font-family: 'Patua One', cursive;
     border-radius: 3px;
     padding: 0 10px;
     padding-top: 5px;
@@ -64,7 +63,8 @@ header{
     width: 90px;
     border: solid var(--btn-color) 2px;
     background-color: var(--black);
-    color: #fff
+    color: #fff;
+    font-family: 'Patua One', cursive;
 }
 
 #btn-cadastrar{
@@ -75,6 +75,119 @@ header{
 
 h1{
     padding-top: 100px;
-    color: var(--white);
+    color: var(--btn-color);
+    font-size: 2rem;
+    margin: 50px 0;
 }
 
+
+#container-filmes {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria span {
+    padding: 0 0 0 45px;
+    font-size: 1.3rem;
+    color: var(--white);
+    width: 100%;
+}
+
+.carrossel-categoria {
+    display: flex;
+    align-items: center;
+}
+
+.filmes {
+    min-width: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 200px;
+    scroll-behavior: smooth;
+}
+
+.seta-esquerda, .seta-direita {
+    font-size: 4rem;
+    color: var(--btn-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+.seta-direita {
+    margin-left: 40px;
+}
+
+.filme{
+    position: relative;
+    margin-right: 40px;
+}
+
+.filme:nth-last-child() {
+    margin-right: 0;
+}
+
+
+.filme img:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px;
+    transition: all 200ms ease-in-out;
+}
+
+.info-filme{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    width: 260px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 5px;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+    text-shadow: 2px 2px #000;
+}
+
+.info-filme:hover {
+    opacity: 1;
+}
+
+.rodape-filme{
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-nome-filme, .label-desc-filme, .duracao-filme{
+    font-size: 1rem;
+    color: var(--btn-color)
+}
+
+.nome-filme{
+    color: var(--white);
+    padding-bottom: 8px;
+}
+
+.desc-filme{
+    color: var(--white);
+    text-align: justify;
+}
+
+.indicacao-img{
+    width: 30px;
+    border-radius: 3px;
+}
