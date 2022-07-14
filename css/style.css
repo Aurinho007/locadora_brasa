@@ -113,6 +113,7 @@ h1{
     overflow-y: hidden;
     height: 200px;
     scroll-behavior: smooth;
+    
 }
 
 .seta-esquerda, .seta-direita {
@@ -128,6 +129,7 @@ h1{
 .filme{
     position: relative;
     margin-right: 40px;
+    cursor: pointer;
 }
 
 .filme:nth-last-child() {
