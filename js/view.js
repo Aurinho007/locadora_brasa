@@ -20,7 +20,7 @@ function populaView(filmesResponse) {
 
         filmesFiltrados.forEach((filme) => {
             filmesHTML += `
-                <div class="filme">
+                <div class="filme" id="${filme.id}">
                     <img class="img-filme" src="${filme.cartaz}" alt="" srcset="">
                     <div class="info-filme">
                         <div class="dados-filme">
@@ -43,11 +43,11 @@ function populaView(filmesResponse) {
             <span>${categoria}</span>
 
             <div class="carrossel-categoria">
-                ${filmesFiltrados.length > 3 ? '<div class="seta-esquerda"><svg xmlns="http://www.w3.org/2000/svg"  width="50" height="50" style="fill: rgba(255, 214, 0, 1)" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"/></div>' : ''}
+                ${filmesFiltrados.length > 1 ? '<div class="seta-esquerda"><svg xmlns="http://www.w3.org/2000/svg"  width="50" height="50" style="fill: rgba(255, 214, 0, 1)" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"/></div>' : ''}
 
                 <div class="filmes">${filmesHTML}</div>
 
-                ${filmesFiltrados.length > 3 ? '<div class="seta-direita"><svg xmlns="http://www.w3.org/2000/svg"  width="50" height="50" style="fill: rgba(255, 214, 0, 1)" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"/></svg></div>' : ''}
+                ${filmesFiltrados.length > 1 ? '<div class="seta-direita"><svg xmlns="http://www.w3.org/2000/svg"  width="50" height="50" style="fill: rgba(255, 214, 0, 1)" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"/></svg></div>' : ''}
             </div>
         </div>
         `
@@ -87,8 +87,9 @@ async function carregaActions(){
         filme.style.zIndex = '1';
         filme.childNodes[1].style.transform = 'scale(1.3)'
         filme.childNodes[1].style.zIndex = '100'
-        filme.childNodes[1].style.filter = 'grayscale(60%) blur(3px)'
-        
+        filme.childNodes[1].style.filter = 'grayscale(50%) blur(3px)'
+        filme.childNodes[1].style.opacity = '0.6'
+
         filme.childNodes[3].style.visibility = 'visible'
         filme.childNodes[3].style.zIndex = '100'
         filme.childNodes[3].style.transform = 'scale(1.3)';
@@ -110,4 +111,49 @@ async function carregaActions(){
         let container = setaEsquerda.parentElement.childNodes[3]
         container.scrollLeft -= 300;
     }))
+}
+
+document.querySelector('#btn-excluir').addEventListener('click', ativarExclusao)
+
+function ativarExclusao(){
+    document.querySelector('#btn-incluir').style.display = 'none'
+    document.querySelector('#btn-excluir').style.display = 'none'
+    let btn_cancelar = document.querySelector('#btn-cancelar')
+    btn_cancelar.style.display = 'flex';
+    btn_cancelar.addEventListener('click', () => window.location.reload());
+
+    animacaoExclusao()
+
+    setClickOnCard()
+}
+
+function setClickOnCard(){
+    let filmes = document.querySelectorAll('.filme');
+
+    filmes.forEach((filme) => {
+        filme.addEventListener('click', () => apagarFilmePorId(filme.id))
+    })
+}
+
+async function apagarFilmePorId(id){
+    const filmesResponse = await fetch(`http://localhost:3000/filmes/${id}`, {method: "DELETE"})
+    .then(response => response.json)
+    .then( () => window.location.reload() )
+}
+
+function animacaoExclusao(){
+    let filmes = document.querySelectorAll('.filme');
+
+    filmes.forEach(filme => {
+        console.log(filme.id)
+
+        filme.style.animation = 'excluir 400ms infinite'
+        filme.addEventListener('mouseover', () => {
+            document.querySelectorAll('.info-filme').forEach(info => info.style.display = 'none');
+        })
+
+        filme.addEventListener('mouseout', () => {
+            document.querySelectorAll('.info-filme').forEach(info => info.style.display = '');
+        })
+    });
 }

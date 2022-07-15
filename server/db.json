@@ -70,7 +70,7 @@
         "classificacao": 16,
         "duracao": "2h45min",
         "descricao": "Caba cheio de ódio vira caçador de recompensas muito bom de mira",
-        "cartaz": "https://cenasdecinema.com/wp-content/uploads/2012/10/Django-livre_destaque3.jpg",
+        "cartaz": "https://i.ytimg.com/vi/nPbBQOZv1Qc/maxresdefault.jpg",
         "id": 8
     },
     {
@@ -79,7 +79,7 @@
         "classificacao": 16,
         "duracao": "2h10min",
         "descricao": "Lua querendo caçar confusão com a Terra ao som de Billy Jean",
-        "cartaz": "https://vitaminanerd.com.br/wp-content/uploads/2022/03/Moonfall-capa-vitamina-nerd.jpg",
+        "cartaz": "https://s2.glbimg.com/_QvbTuD2gsWR0Kc3o1DrHDQrUWQ=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/S/4/qSwuyARGePgMZOlm88Hg/moonfall-capa.jpg",
         "id": 9
     },
     {
@@ -97,7 +97,7 @@
         "classificacao": 16,
         "duracao": "2h20min",
         "descricao": "Jovem tarado com óculos realista doido para fazer dinheiro",
-        "cartaz": "https://4.bp.blogspot.com/-FiyvBGOadbo/WrxDBP-oSoI/AAAAAAAASyI/c8bwmGjnGgwqe5SJ4J4tGWioJHSaZ6vIACLcBGAs/s1600/jogadornumeroum.jpg",
+        "cartaz": "https://imagens.brasil.elpais.com/resizer/QS_yo5kL9nAZn6tWLT3h0HxZ1N0=/1200x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/3AHPVIHFRWURSOVHQNTS2IGVYM.jpg",
         "id": 11
     },
     {
@@ -110,12 +110,12 @@
         "id": 12
     },
     {
-        "nome": "Hobbit",
+        "nome": "O senhor dos Anéis",
         "categoria": "Fantasia",
         "classificacao": 10,
         "duracao": "2h45min",
         "descricao": "Uma jornada incrível para queimar esse maldito anel",
-        "cartaz": "https://cdn.pocket-lint.com/r/s/1200x630/assets/images/155647-tv-news-feature-the-best-order-to-watch-lord-of-the-rings-and-the-hobbit-movies-image4-bs8axpk79q.jpg",
+        "cartaz": "https://noticiasdatv.uol.com.br/media/_versions/artigos_2021/new-line-senhor-dos-aneis-gollum-andy-serkis_fixed_large.jpg",
         "id": 13
     },
     {
