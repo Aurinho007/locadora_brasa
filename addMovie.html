@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/addMovie.css">
+
+    <title>Adiciona filme</title>
+</head>
+<body>
+    <h1>Adicione um novo filme ao catálogo</h1>
+    <form id="formulario">
+        <label for="nome">Título do filme</label>
+        <input type="text" name="nome" id="nome">
+        <label for="categoria">Categoria</label>
+        <select name="categoria" id="categoria">
+            <option selected value="Acao">Ação</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Romance">Romance</option>
+            <option value="Infantil">Infantil</option>
+            <option value="Fantasia">Fantasia</option>
+            <option value="Drama">Drama</option>
+            <option value="Terror">Terror</option>
+        </select>
+
+        <label for="classificacao">Classificação</label>
+        <select name="classificacao" id="classificacao">
+            <option selected value="Livre">Livre</option>
+            <option value="12">12 anos</option>
+            <option value="14">14 anos</option>
+            <option value="16">16 anos</option>
+            <option value="18">18 anos</option>
+        </select>
+
+        <label for="duracao">Duração</label>
+        <input type="time" name="duracao" id="duracao">
+
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao" cols="30" rows="3"></textarea>
+    
+        <label for="cartaz">URL do cartaz</label>
+        <input type="url" name="cartaz" id="">
+        <button type="submit">Salvar</button>
+    </form>
+    <script type="module" src="js/index.js"></script>
+
+</body> 
+</html>
