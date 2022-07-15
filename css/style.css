@@ -28,6 +28,7 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     padding: 0 150px;
+    position: relative;
 }
 
 header{
@@ -207,7 +208,6 @@ h1{
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 1px 1px 6px;
     transition: all 200ms ease-in-out;
 }
 
@@ -268,4 +268,51 @@ h1{
 .indicacao-img{
     width: 30px;
     border-radius: 3px;
+}
+
+.loader{
+    top: 100px;
+    left: 50%;
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.ball{
+    position: absolute;
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin: 10px;
+}
+
+#ball-01{
+    animation: load01 1.5s infinite;
+}
+#ball-02{
+    animation: load02 1.5s infinite;
+    left: 40px
+}
+#ball-03{
+    animation: load03 1.5s infinite;
+    left: 80px
+}
+
+@keyframes load01 {
+    0% { top:0px; }
+    40% { top:-50px }
+    100%{ top:0px; }
+}
+
+@keyframes load02 {
+    0% { top:0px; }
+    50% { top:-50px }
+    100%{ top:0px; }
+}
+
+@keyframes load03 {
+    0% { top:0px; }
+    60% { top:-50px }
+    100%{top:0px; }
 }

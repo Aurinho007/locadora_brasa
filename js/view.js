@@ -1,3 +1,4 @@
+
 let containerFilmes = document.querySelector('#container-filmes');
 
 async function carregaFilmes(){
@@ -132,7 +133,7 @@ function setClickOnCard(){
 
     filmes.forEach((filme) => {
         filme.addEventListener('click', () => {
-            confirm('Deseja mesmo apagar esse filme?') ? apagarFilmePorId(filme.id) : window.location.reload()        
+            confirm(`Deseja mesmo apagar esse filme?`) ? apagarFilmePorId(filme.id) : window.location.reload()        
         })
     })
 }
@@ -158,3 +159,6 @@ function animacaoExclusao(){
         })
     });
 }
+
+
+
