@@ -101,12 +101,13 @@ async function carregaActions(){
     }));
 
 
-    let container = document.querySelector('.filmes');
     setasDireita.forEach(setaDireita => setaDireita.addEventListener('click', () => {
+        let container = setaDireita.parentElement.childNodes[3]
         container.scrollLeft += 300;
     }))
 
     setasEsquerda.forEach(setaEsquerda => setaEsquerda.addEventListener('click', () => {
+        let container = setaEsquerda.parentElement.childNodes[3]
         container.scrollLeft -= 300;
     }))
 }

@@ -99,6 +99,87 @@
         "descricao": "Jovem tarado com óculos realista doido para fazer dinheiro",
         "cartaz": "https://4.bp.blogspot.com/-FiyvBGOadbo/WrxDBP-oSoI/AAAAAAAASyI/c8bwmGjnGgwqe5SJ4J4tGWioJHSaZ6vIACLcBGAs/s1600/jogadornumeroum.jpg",
         "id": 11
+    },
+    {
+        "nome": "Tropa de Elite",
+        "categoria": "Ação",
+        "classificacao": 18,
+        "duracao": "1h45min",
+        "descricao": "NÃO VAI SUBIR NINGUÉM",
+        "cartaz": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/ED0065E47DE500D531BED7C6F7CFA8263DF3D6057F39F22B633583D707EA9468/scale?width=1200&aspectRatio=1.78&format=jpeg",
+        "id": 12
+    },
+    {
+        "nome": "Hobbit",
+        "categoria": "Fantasia",
+        "classificacao": 10,
+        "duracao": "2h45min",
+        "descricao": "Uma jornada incrível para queimar esse maldito anel",
+        "cartaz": "https://cdn.pocket-lint.com/r/s/1200x630/assets/images/155647-tv-news-feature-the-best-order-to-watch-lord-of-the-rings-and-the-hobbit-movies-image4-bs8axpk79q.jpg",
+        "id": 13
+    },
+    {
+        "nome": "Harry Potter e a Câmara Secreta",
+        "categoria": "Fantasia",
+        "classificacao": 0,
+        "duracao": "2h35min",
+        "descricao": "Uma sala secreta que tem uma cobra gigante",
+        "cartaz": "https://i.ytimg.com/vi/zZJ12Q_j5dc/maxresdefault.jpg",
+        "id": 14
+    },
+    {
+        "nome": "As Crònicas de Nárnia",
+        "categoria": "Fantasia",
+        "classificacao": 0,
+        "duracao": "2h25min",
+        "descricao": "Um mundo de aventuras dentro do seu armário",
+        "cartaz": "https://kanto.legiaodosherois.com.br/w760-h398-cfill/wp-content/uploads/2018/10/legiao_yLfC9avSc1D2UlQBs85m7WHd0pXKeqojuZn_wiObzt.jpg.webp",
+        "id": 15
+    },
+    {
+        "nome": "Sherek",
+        "categoria": "Fantasia",
+        "classificacao": 0,
+        "duracao": "1h25min",
+        "descricao": "Um ogro que é amigo de um burro falante",
+        "cartaz": "https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2021/06/shrek-0.jpg?quality=100&strip=info&w=680&h=453&crop=1",
+        "id": 16
+    },
+    {
+        "nome": "WarCraft",
+        "categoria": "Fantasia",
+        "classificacao": 12,
+        "duracao": "1h25min",
+        "descricao": "Um jogo ruim que virou um filme ruim",
+        "cartaz": "https://i0.wp.com/portalaltadefinicao.com/wp-content/uploads/2021/03/Warcraft-%E2%80%93-O-Primeiro-Encontro-de-Dois-Mundos-filme.jpg?fit=1600%2C873&ssl=1",
+        "id": 17
+    },
+    {
+        "nome": "Matrix",
+        "categoria": "Ficção-Científica",
+        "classificacao": 14,
+        "duracao": "1h55min",
+        "descricao": "Será que a gente vive em uma simulação?",
+        "cartaz": "https://s2.glbimg.com/fP0UcztEtzUGXiUYJv-103-NurU=/512x320/smart/e.glbimg.com/og/ed/f/original/2021/02/01/matrix.jpg",
+        "id": 18
+    },
+    {
+        "nome": "Maze Runner",
+        "categoria": "Ficção-Científica",
+        "classificacao": 14,
+        "duracao": "1h35min",
+        "descricao": "O maior labirinto do mundo",
+        "cartaz": "https://br.web.img2.acsta.net/pictures/14/08/20/00/16/149160.jpg",
+        "id": 19
+    },
+    {
+        "nome": "Jurassic Park",
+        "categoria": "Ficção-Científica",
+        "classificacao": 0,
+        "duracao": "1h30min",
+        "descricao": "Por que trazer dinossauros de volta a vida seria uma má ideia?",
+        "cartaz": "https://br.web.img2.acsta.net/newsv7/22/05/20/20/00/5952873.jpg",
+        "id": 20
     }
   ]
 }
