@@ -131,7 +131,9 @@ function setClickOnCard(){
     let filmes = document.querySelectorAll('.filme');
 
     filmes.forEach((filme) => {
-        filme.addEventListener('click', () => apagarFilmePorId(filme.id))
+        filme.addEventListener('click', () => {
+            confirm('Deseja mesmo apagar esse filme?') ? apagarFilmePorId(filme.id) : window.location.reload()        
+        })
     })
 }
 
