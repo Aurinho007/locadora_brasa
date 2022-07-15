@@ -15,7 +15,7 @@ function populaView(filmesResponse) {
 
     categorias.forEach(categoria => {
         let filmesFiltrados = filmesResponse.filter((filme) => filme.categoria === categoria)
-        filmesFiltrados = filmesFiltrados.sort((a, b) => 0.5 - Math.random());
+        // filmesFiltrados = filmesFiltrados.sort((a, b) => 0.5 - Math.random());
         let filmesHTML = '';
 
         filmesFiltrados.forEach((filme) => {
