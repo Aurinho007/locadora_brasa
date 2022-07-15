@@ -11,12 +11,13 @@
 </head>
 <body>
     <h1>Adicione um novo filme ao catálogo</h1>
+
     <form id="formulario">
         <label for="nome">Título do filme</label>
         <input type="text" name="nome" id="nome">
         <label for="categoria">Categoria</label>
         <select name="categoria" id="categoria">
-            <option selected value="Acao">Ação</option>
+            <option selected value="Ação">Ação</option>
             <option value="Aventura">Aventura</option>
             <option value="Romance">Romance</option>
             <option value="Infantil">Infantil</option>
@@ -27,7 +28,7 @@
 
         <label for="classificacao">Classificação</label>
         <select name="classificacao" id="classificacao">
-            <option selected value="Livre">Livre</option>
+            <option selected value="0">Livre</option>
             <option value="12">12 anos</option>
             <option value="14">14 anos</option>
             <option value="16">16 anos</option>
@@ -44,7 +45,8 @@
         <input type="url" name="cartaz" id="">
         <button type="submit">Salvar</button>
     </form>
-    <script type="module" src="js/index.js"></script>
+
+    <script type="module" src="js/addFilme.js"></script>
 
 </body> 
 </html>

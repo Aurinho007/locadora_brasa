@@ -19,7 +19,7 @@ export class Controller {
     }
 
     adicionaFilme(filme) {
-        fetch("http://localhost:3000/filmes", {
+       return fetch("http://localhost:3000/filmes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
