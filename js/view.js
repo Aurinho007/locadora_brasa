@@ -1,4 +1,3 @@
-
 let containerFilmes = document.querySelector('#container-filmes');
 
 async function carregaFilmes(){
