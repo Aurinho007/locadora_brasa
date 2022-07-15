@@ -143,11 +143,10 @@ async function apagarFilmePorId(id){
 
 function animacaoExclusao(){
     let filmes = document.querySelectorAll('.filme');
+    document.querySelector('h1').innerText = "Selecione um filme para apagar"
 
     filmes.forEach(filme => {
-        console.log(filme.id)
-
-        filme.style.animation = 'excluir 400ms infinite'
+        filme.style.animation = `excluir${Math.floor(Math.random() * 2) + 1} 400ms infinite`
         filme.addEventListener('mouseover', () => {
             document.querySelectorAll('.info-filme').forEach(info => info.style.display = 'none');
         })
