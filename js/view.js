@@ -1,12 +1,13 @@
+import { Controller } from "./controller.js";
+
 let containerFilmes = document.querySelector('#container-filmes');
+let controller = new Controller();
 
 async function carregaFilmes(){
-    const filmesResponse = await fetch('http://localhost:3000/filmes')
-    .then(data => data.json())
-    .then(arrayFilmes => arrayFilmes)
-
+    let filmesResponse = await controller.buscaFilmes()
     populaView(filmesResponse);
 }
+
 
 
 function populaView(filmesResponse) {
@@ -132,15 +133,9 @@ function setClickOnCard(){
 
     filmes.forEach((filme) => {
         filme.addEventListener('click', () => {
-            confirm(`Deseja mesmo apagar esse filme?`) ? apagarFilmePorId(filme.id) : window.location.reload()        
+            confirm(`Deseja mesmo apagar esse filme?`) ? controller.deletaFilme(filme.id) : window.location.reload()        
         })
     })
-}
-
-async function apagarFilmePorId(id){
-    const filmesResponse = await fetch(`http://localhost:3000/filmes/${id}`, {method: "DELETE"})
-    .then(response => response.json)
-    .then( () => window.location.reload() )
 }
 
 function animacaoExclusao(){
