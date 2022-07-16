@@ -68,7 +68,7 @@
       "categoria": "Ação",
       "classificacao": 16,
       "duracao": "2h45min",
-      "descricao": "Caba cheio de ódio vira caçador de recompensas muito bom de mira",
+      "descricao": "Caba cheio de ódio vira caçador de recompensas",
       "cartaz": "https://i.ytimg.com/vi/nPbBQOZv1Qc/maxresdefault.jpg",
       "id": 8
     },
@@ -77,7 +77,7 @@
       "categoria": "Ficção-Científica",
       "classificacao": 16,
       "duracao": "2h10min",
-      "descricao": "Lua querendo caçar confusão com a Terra ao som de Billy Jean",
+      "descricao": "Lua querendo caçar confusão com a Terra",
       "cartaz": "https://s2.glbimg.com/_QvbTuD2gsWR0Kc3o1DrHDQrUWQ=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/S/4/qSwuyARGePgMZOlm88Hg/moonfall-capa.jpg",
       "id": 9
     },
@@ -95,7 +95,7 @@
       "categoria": "Ficção-Científica",
       "classificacao": 16,
       "duracao": "2h20min",
-      "descricao": "Jovem tarado com óculos realista doido para fazer dinheiro",
+      "descricao": "Jovem tarado com óculos realista",
       "cartaz": "https://imagens.brasil.elpais.com/resizer/QS_yo5kL9nAZn6tWLT3h0HxZ1N0=/1200x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/3AHPVIHFRWURSOVHQNTS2IGVYM.jpg",
       "id": 11
     },
@@ -118,7 +118,7 @@
       "id": 13
     },
     {
-      "nome": "Harry Potter e a Câmara Secreta",
+      "nome": "Harry Potter e a Câmara",
       "categoria": "Fantasia",
       "classificacao": 0,
       "duracao": "2h35min",
@@ -176,7 +176,7 @@
       "categoria": "Ficção-Científica",
       "classificacao": 0,
       "duracao": "1h30min",
-      "descricao": "Por que trazer dinossauros de volta a vida seria uma má ideia?",
+      "descricao": "Trazer dinossauros de volta a vida seria uma má ideia?",
       "cartaz": "https://br.web.img2.acsta.net/newsv7/22/05/20/20/00/5952873.jpg",
       "id": 20
     },
@@ -206,6 +206,15 @@
       "descricao": "Você vai ficar uma semana dormindo com a luz acesa",
       "cartaz": "https://br.web.img3.acsta.net/pictures/16/04/08/20/47/242656.jpg",
       "id": 23
+    },
+    {
+      "nome": "A órfã",
+      "categoria": "Terror",
+      "classificacao": 18,
+      "duracao": "01h20min",
+      "descricao": "Ela é uma criança estranha",
+      "cartaz": "https://t.ctcdn.com.br/ohE0xvJWl4jsx1WtCtGwMHUt8zM=/0x978:1917x2058/1400x788/smart/filters:format(webp)/i463266.jpeg",
+      "id": 24
     }
   ]
 }
