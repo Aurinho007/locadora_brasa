@@ -1,3 +1,10 @@
+:root{
+    --black: #32373b;
+    --background: #f0eff4;
+    --btn-color: #ffd600;
+    --white: #fff;
+}
+
 h1 {
     color: var(--btn-color)
 }
@@ -12,9 +19,10 @@ body{
     margin-left: 6px;
 }
 
-form{
+#formulario{
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 .form-item{
@@ -23,12 +31,43 @@ form{
     padding-bottom: 10px;
 }
 
+.form-item input, .form-item select, .form-item textarea {
+    background-color: var(--black);
+    border: none;
+    height: 30px;
+    border-radius: 4px;
+    padding-left: 7px;
+    color: #fff;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-item input:focus, .form-item select:focus, .form-item textarea:focus {
+    outline: none;
+}
+
 #section2{
-    flex-direction: row;
-    justify-content:space-between
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section2 .form-item {
+    width: 40%;
+}
+
+#categoria, #classificacao {
+    width: 100%;
+}
+
+#section2 .form-item:nth-child(3) {
+    width: 15%;
 }
 
 
+.form-item textarea {
+    padding: 5px 5px;
+}
 
 #btn-submit{
     border-radius: 3px;
@@ -41,6 +80,4 @@ form{
     color: #fff;
     font-family: 'Patua One', cursive;
     cursor: pointer;
-
-    
 }
