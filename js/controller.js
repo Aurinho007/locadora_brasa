@@ -15,17 +15,17 @@ export class Controller {
     buscaPorID(id) {
         fetch(`http://localhost:3000/filmes/${id}`)
             .then(res => res.json())
-            .then(filme => console.log(filme))
+            .then(filme => filme)
     }
 
     adicionaFilme(filme) {
-       return fetch("http://localhost:3000/filmes", {
+        return fetch("http://localhost:3000/filmes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(filme)
-        }).then(res => alert(res))
+        }).then(res => res)
     }
 
     deletaFilme(id) {
@@ -34,7 +34,7 @@ export class Controller {
             headers: {
                 "Content-Type": "application/json"
             }
-        }).then(res => alert(res))
+        }).then(res => res)
     }
 
 }

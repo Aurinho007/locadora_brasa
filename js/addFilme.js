@@ -27,9 +27,9 @@ form.addEventListener('submit',  async (e)  => {
         cartaz: cartaz.value
     }
     
-    window.location.assign('/index.html')
+    
     await controller.adicionaFilme(novoFilme)
-
+    .then( () => window.location.assign('/index.html'))
     
 })
 

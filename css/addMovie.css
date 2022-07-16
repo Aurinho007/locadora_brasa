@@ -2,11 +2,45 @@ h1 {
     color: var(--btn-color)
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
 body{
     color: #fff
 }
 
+#btn-voltar{
+    background-color: var(--btn-color);
+    color: var(--black);
+    margin-left: 6px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#section2{
+    flex-direction: row;
+    justify-content:space-between
+}
+
+
+
+#btn-submit{
+    border-radius: 3px;
+    padding: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90px;
+    border: solid var(--btn-color) 2px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Patua One', cursive;
+    cursor: pointer;
+
+    
+}

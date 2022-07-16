@@ -188,6 +188,24 @@
       "descricao": "Cuidado ele vai te pegar",
       "cartaz": "https://s2.glbimg.com/-t3VmDCltF0mlTIAykApqwyORIs=/553x0:3658x1634/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/o/n/jEJr5CThyLTm1GFO2Msw/scr-fp-035-comp2.jpg",
       "id": 21
+    },
+    {
+      "nome": "Atividade Paranormal",
+      "categoria": "Terror",
+      "classificacao": 18,
+      "duracao": "01h15min",
+      "descricao": "Apenas sustos e nada mais",
+      "cartaz": "https://img.olhardigital.com.br/wp-content/uploads/2021/10/atividade-paranormal-7-2-1024x576.jpg",
+      "id": 22
+    },
+    {
+      "nome": "Quando as Luzes se Apagam",
+      "categoria": "Terror",
+      "classificacao": 16,
+      "duracao": "01h34min",
+      "descricao": "Você vai ficar uma semana dormindo com a luz acesa",
+      "cartaz": "https://br.web.img3.acsta.net/pictures/16/04/08/20/47/242656.jpg",
+      "id": 23
     }
   ]
 }

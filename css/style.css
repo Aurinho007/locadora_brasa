@@ -76,11 +76,12 @@ header{
     cursor: pointer;
 }
 
-#btn-excluir{
+#btn-incluir{
     background-color: var(--btn-color);
     color: var(--black);
     margin-left: 6px;
 }
+
 
 #btn-cancelar {
     width: auto;

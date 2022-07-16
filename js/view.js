@@ -133,7 +133,8 @@ function setClickOnCard(){
 
     filmes.forEach((filme) => {
         filme.addEventListener('click', () => {
-            confirm(`Deseja mesmo apagar esse filme?`) ? controller.deletaFilme(filme.id) : window.location.reload()        
+            let senha = prompt('Senha para apagar o filme')
+            senha == 123 ? controller.deletaFilme(filme.id) : alert('senha incorreta'), window.location.reload()        
         })
     })
 }
