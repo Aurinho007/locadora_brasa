@@ -26,6 +26,19 @@ body{
     font-family: 'Patua One', cursive;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--btn-color); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--btn-color); 
+}
+
 section {
     width: 100%;
     display: flex;

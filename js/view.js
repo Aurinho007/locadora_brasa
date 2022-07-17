@@ -121,7 +121,7 @@ function ativarExclusao(){
     document.querySelector('#btn-excluir').style.display = 'none'
     let btn_cancelar = document.querySelector('#btn-cancelar')
     btn_cancelar.style.display = 'flex';
-    btn_cancelar.addEventListener('click', () => window.location.reload());
+    btn_cancelar.addEventListener('click', () => window.location.assign(window.location.pathname));
 
     animacaoExclusao()
 
