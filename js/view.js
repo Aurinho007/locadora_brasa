@@ -156,3 +156,4 @@ function animacaoExclusao(){
 
 
 
+window.scroll(-100,-100)
