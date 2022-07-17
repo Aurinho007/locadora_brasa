@@ -141,7 +141,6 @@ function setClickOnCard(){
 
 function animacaoExclusao(){
     let filmes = document.querySelectorAll('.filme');
-    document.querySelector('h1').innerText = "Selecione um filme para apagar"
 
     filmes.forEach(filme => {
         filme.style.animation = `excluir${Math.floor(Math.random() * 2) + 1} 400ms infinite`
