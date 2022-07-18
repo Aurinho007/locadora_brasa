@@ -13,6 +13,7 @@ async function carregaFilmes(){
 function populaView(filmesResponse) {
     let categorias = filmesResponse.map((filme) => filme.categoria)
     categorias =  [...new Set(categorias)];
+    categorias.sort()
 
     categorias.forEach(categoria => {
         let filmesFiltrados = filmesResponse.filter((filme) => filme.categoria === categoria)
@@ -114,14 +115,21 @@ async function carregaActions(){
     }))
 }
 
-document.querySelector('#btn-excluir').addEventListener('click', ativarExclusao)
+document.querySelector('#btn-excluir').addEventListener('click', () => {
+    ativarExclusao()
+    window.scroll(0, window.innerHeight);
+})
 
 function ativarExclusao(){
     document.querySelector('#btn-incluir').style.display = 'none'
     document.querySelector('#btn-excluir').style.display = 'none'
+    document.querySelector('#btn-editar').style.display = 'none'
     let btn_cancelar = document.querySelector('#btn-cancelar')
     btn_cancelar.style.display = 'flex';
-    btn_cancelar.addEventListener('click', () => window.location.assign(window.location.pathname));
+    btn_cancelar.addEventListener('click', () => {
+        window.scroll(0, window.innerHeight)
+        window.location.reload()
+    });
 
     animacaoExclusao()
 
@@ -154,6 +162,3 @@ function animacaoExclusao(){
     });
 }
 
-
-
-window.scroll(-100,-100)

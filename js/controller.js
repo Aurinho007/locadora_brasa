@@ -37,4 +37,14 @@ export class Controller {
         }).then(res => res)
     }
 
+    atualizaFilme(filme){
+        return fetch(`http://localhost:3000/filmes/${filme.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(filme)
+        }).then(res => res)
+    }
+
 }
