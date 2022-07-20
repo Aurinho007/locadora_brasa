@@ -17,7 +17,6 @@ function populaView(filmesResponse) {
 
     categorias.forEach(categoria => {
         let filmesFiltrados = filmesResponse.filter((filme) => filme.categoria === categoria)
-        // filmesFiltrados = filmesFiltrados.sort((a, b) => 0.5 - Math.random());
         let filmesHTML = '';
 
         filmesFiltrados.forEach((filme) => {
@@ -142,7 +141,8 @@ function setClickOnCard(){
     filmes.forEach((filme) => {
         filme.addEventListener('click', () => {
             let senha = prompt('Senha para apagar o filme')
-            senha == 123 ? controller.deletaFilme(filme.id) : alert('senha incorreta'), window.location.reload()        
+            console.log(filme.id)
+            senha == 123 ? controller.deletaFilme(filme.id) : alert('senha incorreta')
         })
     })
 }

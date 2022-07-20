@@ -89,7 +89,6 @@ document.querySelectorAll(".label").forEach((element) => {
     element.addEventListener("click", (event) => {
         if (event.target.value != "") {
             event.target.classList.add("filled");
-            console.log(event.target.nextElementSibling.classList)
         } else {
             event.target.classList.remove("filled");
         }
